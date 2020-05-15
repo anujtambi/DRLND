@@ -46,6 +46,7 @@ The algorithm uses two deep neural networks (actor-critic) with the following st
 ## Results 
 
 Episode 2414	Average Score: 1.0074000150337816	 Max Score: 2.60000003874301922642
+
 Envionment solved after 2414 episodes
 
 ![Training](https://github.com/nitink12/DeepReinforcementLearningNanoDegree/blob/master/P3_Collab-Combat/images/training.png)
