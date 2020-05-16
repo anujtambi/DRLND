@@ -18,7 +18,7 @@ If the environment state is continuous, we need to approximate the action-value 
 
 ### DQN
 
-In the standard DQN the Q target value is updated based on the difference between the previous value provided by the network and the observed reward.
+In this report we describe the implementation of a Deep Q-Netowrk (DQN) for reinforcement learning. In the standard DQN the Q target value is updated based on the difference between the previous value provided by the network and the observed reward.
 
 
 **Model architecture**
