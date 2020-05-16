@@ -403,6 +403,7 @@ Episode 362	Score: 28.12	Windowed Average Score: 29.70
 Episode 363	Score: 36.44	Windowed Average Score: 29.92
 Episode 364	Score: 34.29	Windowed Average Score: 30.02
 
+
 Environment solved in 364 episodes!	tWindowed Average Score: 30.02
 
 ![Training](https://github.com/nitink12/DeepReinforcementLearningNanoDegree/blob/master/P2_Continuous-Control/images/training.png)
