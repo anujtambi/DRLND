@@ -406,7 +406,7 @@ Episode 364	Score: 34.29	Windowed Average Score: 30.02
 
 Environment solved in 364 episodes!	tWindowed Average Score: 30.02
 
-![Training](https://github.com/nitink12/DeepReinforcementLearningNanoDegree/blob/master/P2_Continuous-Control/images/training.png)
+![Training](https://github.com/anujtambi/DRLND/blob/master/DRLND/P2_Continuous%20Control/images/training.png)
 
 
 ## future improvements
