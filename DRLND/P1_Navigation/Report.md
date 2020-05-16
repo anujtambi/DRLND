@@ -4,20 +4,21 @@
 # Udacity Deep Reinforcement Learning Nanodegree
 ## Project 1: Navigation - report
 
-## Learning algorithm
+## Reinforcement Learning
 
-In order to have room for improvements, the agent was trained using a fixed Q-target with experience replay. Having the parameter update from Temporal Difference-learning,
-$$
-\Delta w = \alpha \Big(R + \gamma \max_a \hat{q}(S', a, w) - \hat{q}(S, A, w) \Big) \nabla_w \hat{q}(S, A, w)
-$$
-the TD target is supposed to be a replacement for the true value of  $q_\pi(S, A)$ . But it actually is dependent on $w$ and so the derivative of the objective function is incorrect.
+In a Reinforcement Learning problem an *agent* observes the *state* _s(t)_ of an *environment* in a given moment of time, and chooses an *action* _a(t)_. When executed the action changes the environment moving it to a new state _s(t+1)_, and the action receives a *reward* _r(t+1)_. The objective of the agent is maximize the reward received after multiple interactions with the environment. In order to achieve this goal the agent must *explore* the environment in  order to find out the best actions given the state, and also to *exploit* the acquired knowledge to collect the rewards.  
 
-To fix this, the TD target becomes
-$$
-R + \gamma \max_a \hat{q}(S', a, w^-)
-$$
-where $w^-$ is a copy of $w$ that won't change during the learning step. Additionally, experience replay is a buffer mechanism to provide a past experience sampler for the agent to learn.
+## Q-Learning and Q-Networks 
 
+A *policy* is a function that gives the probability of choosing an action _a_ when observing a state _s_. The *optimal policy* is the one that maximizes the estimated reward obtained when following the policy. 
+
+In Q-learning the agent tries to find the optimal action-value function Q, which maps a (state,action) pair to the estimated reward obtained when following the optimal policy. If the environment state is discrete, the action-value function Q can be represented as a table.
+
+If the environment state is continuous, we need to approximate the action-value function Q. This can be done using a neural network as a non-linear function approximator, adjusting its weights according to the observed rewards.
+
+### DQN
+
+In the standard DQN the Q target value is updated based on the difference between the previous value provided by the network and the observed reward.
 
 
 **Model architecture**
