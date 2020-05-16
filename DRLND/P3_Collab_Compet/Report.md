@@ -49,7 +49,7 @@ Episode 2414	Average Score: 1.0074000150337816	 Max Score: 2.6000000387430192264
 
 Envionment solved after 2414 episodes
 
-![Training](https://github.com/nitink12/DeepReinforcementLearningNanoDegree/blob/master/P3_Collab-Combat/images/training.png)
+![Training](https://github.com/anujtambi/DRLND/blob/master/DRLND/P3_Collab_Compet/images/training.png)
 
 ## future improvements
 1. Attempt and solve the Football environment. I think this would be challenging as the environment not only collaborative between players in the same team but is also competitive between players of opposite teams.
